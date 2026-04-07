@@ -223,7 +223,7 @@ export default function Home() {
                       <p className="text-xs text-gray-500 mt-1">{product.brand} · {product.model_number}</p>
                     </div>
                     <div className="flex gap-1">
-                      {product.attributes && (product.attributes as Record<string, unknown>).anc && (
+                     {product.attributes && (product.attributes as Record<string, unknown>).anc === true && (
                         <span className="text-[10px] px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">ANC</span>
                       )}
                       <span className="text-[10px] px-2 py-0.5 rounded bg-gray-800 text-gray-400">
